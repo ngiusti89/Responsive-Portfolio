@@ -19,10 +19,7 @@ body {
     clear: both;
   }
   
-  h1,
-  h2,
-  h3,
-  p {
+  h1, h2, h3, p {
     margin-bottom: 20px;
   }
   
@@ -30,9 +27,7 @@ body {
     margin-bottom: 0;
   }
   
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
     color: #4aaaa5;
@@ -45,8 +40,7 @@ body {
     border-bottom: 3px solid #dddddd;
   }
   
-  h2,
-  h3 {
+  h2, h3 {
     font-size: 22px;
   }
   
@@ -214,5 +208,38 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+
+  /* media queries */
+
+  @media screen and (max-width: 980px) {
+    #main-container {
+      float: left;
+      max-width: 70%;
+    }
+    .work {
+      max-width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #main-container {
+      max-width: 100%;
+    }
+    .work {
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    #masthead{
+      position: static;
+    }
+    #main-container {
+      max-width: 100%;
+    }
+    .work {
+      max-width: 100%;
+    }
   }
   
